@@ -25,6 +25,7 @@ body{
 .block{
 	display: flex;
 	flex-grow: 1;
+  overflow: hidden;
 }
 .sidebar{
 	border-top-left-radius: 7px;
@@ -33,6 +34,11 @@ body{
 	display: flex;
 
 	background-color: #2F3136;
+}
+.sidebar-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content) minmax(0, 1fr);
 }
 .content{
 	display: flex;
@@ -46,6 +52,7 @@ body{
 	background-color: #202225;
 	border: 1px solid #202225;
 	border-radius: 5px;
+  box-sizing: border-box;
 }
 .input::placeholder{
 	font-size: 14px;
@@ -83,10 +90,21 @@ body{
 	font-size: 20px;
 	display: flex;
 	margin-right: 10px;
-	
+
+  cursor: pointer;
+  user-select: none;
+}
+.chats-scroll{
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.chats-scroll::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 .chats{
-	overflow-y: scroll; 
 	display: flex;
 	flex-direction: column;
 	gap: 10px;

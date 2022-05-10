@@ -1,0 +1,99 @@
+*, *::after, *::before {
+	padding: 0;
+	margin: 0;
+}
+ul li{list-style: none;}
+a{text-decoration: none;}
+html, body{
+	height: 100%;
+}
+body{
+	background-color: #202225;
+}
+.discord{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+.head{
+	padding-left: 9px;
+	font-size: 19px;
+	color: #A3A6AA;
+	height: 20px;
+	background-color: #202225;
+}
+.block{
+	display: flex;
+	flex-grow: 1;
+}
+.sidebar{
+	border-top-left-radius: 7px;
+	width: 300px;
+	box-sizing: border-box;
+	display: flex;
+
+	background-color: #2F3136;
+}
+.content{
+	display: flex;
+	flex-grow: 1;
+	background-color: #36393F;
+}
+.input{
+	margin: 10px;
+	width: 270px;
+	padding: 5px;
+	background-color: #202225;
+	border: 1px solid #202225;
+	border-radius: 5px;
+}
+.input::placeholder{
+	font-size: 14px;
+	color: #737679;
+}
+.spisok{
+	margin: 10px;
+	display: flex;
+	gap: 14px;
+	flex-direction: column;
+}
+.spisok a{
+	font-size: 20px;
+	color: #96989D;
+}
+.sidebar-border{
+	margin-top: 2px;
+	margin-bottom: 13px;
+	border: 1px solid #232428;
+}
+.sms{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.sms-symbol{
+	margin-left: 10px;
+	margin-top: 30px;
+	color: #96989D;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.symbol{
+	font-size: 20px;
+	display: flex;
+	margin-right: 10px;
+	
+}
+.chats{
+	overflow-y: scroll; 
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.chat{
+	margin-left: 10px;
+	width: 270px;
+	height: 35px;
+	background-color: green;
+}

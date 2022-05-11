@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="discord.css">
-	<title>Discord</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="discord.css">
+  <link rel="stylesheet" href="content.css">
+  <title>Discord</title>
+
+  <script src="https://kit.fontawesome.com/9b107fc2c5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<div class="discord">
-		<div class="head">
-			Discord
-		</div>
-		<div class="block">
-			<div class="sidebar">
-				<div class="sidebar-content">
-					<input class="input" type="text" placeholder="Найти или начать беседу">
-					<div class="sidebar-border"></div>
-					<div class="spisok">
-						<a href="#">Друзья</a>
-						<a href="#">Nitro</a>
-					</div>
+  <div class="discord">
+    <div class="head">
+      Discord
+    </div>
+    <div class="block">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <input class="input" type="text" placeholder="Найти или начать беседу">
+          <div class="sidebar-border"></div>
+          <div class="spisok">
+            <a href="#">Друзья</a>
+            <a href="#">Nitro</a>
+          </div>
 
           <div class="sms-symbol">
             <div class="sms">
@@ -30,20 +35,80 @@
             </div>
           </div>
 
-          <div class="chats-scroll">
+          <div class="chats-scroll hidden-scrollbar">
             <div class="chats">
               <div class="chat"></div>
             </div>
           </div>
-				</div>
-			</div>
+        </div>
+      </div>
 
-			<div class="content">
-			
-			</div>
-		</div>
-	</div>
+      <div class="content">
+        <div class="top-container">
+          <div class="avatars">
+            <div class="img-container"><img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg" alt=""></div>
+            <div class="img-container"><img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg" alt=""></div>
+            <div class="img-container"><img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg" alt=""></div>
+          </div>
+
+          <div class="controls">
+            <div class="left">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <div class="center">
+              <div class="rounded-button">
+                <div class="rounded">
+                  <i class="fas fa-video"></i>
+                </div>
+
+                <div class="badge">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <div class="rounded-button">
+                <div class="rounded">
+                  <i class="fas fa-desktop"></i>
+                </div>
+
+                <div class="badge">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <div class="rounded-button">
+                <div class="rounded">
+                  <i class="fas fa-microphone"></i>
+                </div>
+
+                <div class="badge">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <div class="rounded-button">
+                <div class="rounded red">
+                  <i class="fas fa-phone-slash"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <i class="fas fa-external-link-alt"></i>
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-container">
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="discord.js"></script>
 </body>
+
 </html>

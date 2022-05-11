@@ -1,0 +1,140 @@
+.content {
+  display: flex;
+  flex-grow: 1;
+  background-color: #36393F;
+
+  flex-direction: column;
+}
+
+.content > * {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.content .top-container {
+  position: relative;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.content .top-container:hover .controls {
+  opacity: 1;
+  bottom: 20px;
+  transition: bottom 0.35s, opacity 0.2s;
+}
+
+.content .controls {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: bottom 0.35s, opacity 0.2s;
+}
+
+.content .left i, .content .right i {
+  color: #B9BBBE;
+  cursor: pointer;
+}
+
+.content .left i:hover, .content .right i:hover {
+  color: #ffffff;
+}
+
+.content .right i.fa-expand {
+  margin-left: 15px;
+}
+
+.content .center {
+  display: flex;
+  gap: 15px;
+}
+
+.rounded-button {
+  position: relative;
+}
+
+.rounded-button .rounded {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background-color: #2F3136;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.rounded-button .rounded:not(.red):hover {
+  background-color: #ffffff;
+  color: #2F3136;
+
+  transition: 0.3s;
+}
+
+.rounded-button .rounded.red {
+  background-color: #ED4245;
+  transform: scaleX(-1);
+}
+
+.rounded-button .badge {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2F3136;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 4px solid #000;
+
+  cursor: pointer;
+}
+
+.rounded-button .badge:hover {
+  background-color: #ffffff;
+  color: #2F3136;
+
+  transition: 0.3s;
+}
+
+.avatars {
+  display: flex;
+  gap: 8px;
+
+  padding: 0 8px;
+}
+
+.avatars .img-container {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  user-select: none;
+  cursor: pointer;
+  border: 2px solid green;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
